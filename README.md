@@ -7,10 +7,10 @@ Load balancing is the practice of distributing computational workloads between t
 
 ## How does load balancing work?
 
-Load balancing is handled by a tool or application called a load balancer. When a request arrives from a user, the load balancer assigns the request to a given server, and this process repeats for each request. Load balancers determine which server should handle each requests. 
+Load balancing is handled by a tool or application called a load balancer. When a request arrives from a user, the load balancer assigns the request to a given server, and this process repeats for each request. Load balancers determine which server should handle each request. 
 
 
-   - *Below is an illustration of a requests served without a load balancer. (there is an overload on one server, one server works well and the rest are idle.)*
+   - *Below is an illustration of a request served without a load balancer. (there is an overload on one server, one server works well and the rest are idle.)*
 
 ![images](images/Screenshot_19-removebg-preview%20(1).png)
 
@@ -25,7 +25,7 @@ Now that we have a good understanding of what a load balancer is and how it work
 ## Setting Up a Basic Load Balancer
 
 
-1. First we will provision two EC instances and install apache webserver in them. We will open port 8000 and allow traffic from anywhere.
+1. First we will provision two EC instances and install Apache webserver in them. We will open port 8000 and allow traffic from anywhere.
 
 ![images](images/Screenshot_10.png)
 
@@ -46,7 +46,7 @@ Now that we have a good understanding of what a load balancer is and how it work
 
 ![images](images/Screenshot_4.png)
 
-5. Run `sudo vi /etc/apache2/sites-available/000-default.conf` and change port 80 on the virtualhost to 8000
+5. Run `sudo vi /etc/apache2/sites-available/000-default.conf` and change port 80 on the virtual host to 8000
 
    - Run `sudo systemctl restart apache2` to restart the server
 
@@ -141,9 +141,9 @@ Now let's override the Default HMTL file of Apache:
 
 ![images](images/Screenshot_16.png)
 
-2. Lastly, paste the Public IP adress of Nginx load balancer to your browser, you should see the same webpages, but this time served by the load balancer. 
+2. Lastly, paste the Public IP address of the Nginx load balancer to your browser, you should see the same webpages, but this time served by the load balancer. 
 
-  - To test that the load balancer is working reload the browser, in doing so you will see that the `Public IP` in the html file changes which means it is different instances that requests are distributed to.
+  - To test that the load balancer is working reload the browser, in doing so you will see that the `Public IP` in the HTML file changes which means it is different instances that are serving the requests.
 
 ![images](images/Screenshot_17.png)
 
