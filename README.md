@@ -3,6 +3,17 @@
 
 <img src='images/NGINX-Plus-product-page_Load-Balancer@2x.png' width='900' height='250'>
 
+## What is Load balancing?
+
+Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and reliability
+
+
+![images](images/Screenshot_19-removebg-preview%20(1).png)
+
+![images](images/Screenshot_20-removebg-preview.png)
+
+
+
 
 ![images](images/Screenshot_10.png)
 
