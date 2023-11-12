@@ -1,5 +1,3 @@
-# Nginx-Loadbalancer
-
 
 <img src='images/loadbalancer.png' width='900' height='250'>
 
