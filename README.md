@@ -3,10 +3,18 @@
 
 ## What is Load balancing?
 
-Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and reliability
+Load balancing is the practice of distributing computational workloads between two or more computers. On the Internet, load balancing is often employed to divide network traffic among several servers. This reduces the strain on each server and makes the servers more efficient, speeding up performance and reducing latency.
 
+## How does load balancing work?
+
+Load balancing is handled by a tool or application called a load balancer. When a request arrives from a user, the load balancer assigns the request to a given server, and this process repeats for each request. Load balancers determine which server should handle each requests. 
+
+
+   - Below is an illustration of a requests served without a load balancer. (there is an overload on one server and the rest are idle.)
 
 ![images](images/Screenshot_19-removebg-preview%20(1).png)
+
+   - Below is an illustration with a load balancer (traffic is distributed between the servers)
 
 ![images](images/Screenshot_20-removebg-preview.png)
 
