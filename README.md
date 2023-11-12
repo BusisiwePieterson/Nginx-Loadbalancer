@@ -34,11 +34,11 @@ Now that we have a good understanding of what a load balancer is and how it work
 ![images](images/Screenshot_6.png)
 
 
-2. Run `sudo apt update -y && sudo apt install apache2 -y` to install apache on both servers.
+2. Run `sudo apt update -y && sudo apt install apache2 -y` to install Apache on both servers.
 
 ![images](images/Screenshot_2.png)
 
-3. Run `sudo systemctl status apache2` to verify that apache is running
+3. Run `sudo systemctl status apache2` to verify that Apache is running
 
 ![images](images/Screenshot_3.png)
 
@@ -54,7 +54,7 @@ Now that we have a good understanding of what a load balancer is and how it work
 
 ## Creating our new HTML file
 
-1. Run `sudo vi index.html` to open a new `index.html` file and copy the code below:
+1. Run `sudo vi index.html` on each webserver to open a new `index.html` file and copy the code below:
 
 ```
         <!DOCTYPE html>
